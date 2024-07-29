@@ -65,7 +65,7 @@ function App() {
     localStorage.setItem(
       "selectedPlaces",
       JSON.stringify(
-        storedIds.filter(() => {
+        storedIds.filter((id) => {
           id !== selectedPlace.current;
         })
       )
